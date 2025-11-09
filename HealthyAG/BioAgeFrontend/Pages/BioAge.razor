@@ -1,97 +1,244 @@
-@page "/bioage"
+﻿@page "/bioage"
 @using BioAgeFrontend.Models
 @inject BioAgeFrontend.Services.ApiService Api
 
 <div class="container d-flex justify-content-center align-items-center flex-column mt-5 mb-5">
-    <div class="card shadow-sm p-4" style="max-width: 450px; width: 100%;">
-        <h3 class="text-center mb-4" style="color: var(--main-color);">������ �������������� ��������</h3>
+    <div class="card shadow-sm p-4" style="max-width: 500px; width: 100%;">
+        <h3 class="text-center mb-4" style="color: var(--main-color);">Расчёт биологического возраста</h3>
 
         <EditForm Model="@request" OnValidSubmit="@Calculate">
             <DataAnnotationsValidator />
             <ValidationSummary />
 
             <div class="mb-3">
-                <label class="form-label">���</label>
+                <label class="form-label">Имя</label>
                 <InputText @bind-Value="request.Name" class="form-control" />
                 <ValidationMessage For="@(() => request.Name)" />
             </div>
 
+            <!-- ВЫБОР ПОЛА -->
             <div class="mb-3">
-                <label class="form-label">�������</label>
+                <label class="form-label">Пол</label>
+                <div>
+                    <input type="radio" name="gender" id="male" value="male" @onchange="(e) => OnGenderChanged(false)" checked="@(!request.IsFemale)" />
+                    <label for="male" class="me-3">Мужской</label>
+                    
+                    <input type="radio" name="gender" id="female" value="female" @onchange="(e) => OnGenderChanged(true)" checked="@(request.IsFemale)" />
+                    <label for="female">Женский</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Возраст</label>
                 <InputNumber @bind-Value="request.ChronologicalAge" class="form-control" />
                 <ValidationMessage For="@(() => request.ChronologicalAge)" />
             </div>
 
             <div class="mb-3">
-                <label class="form-label">���� (��)</label>
+                <label class="form-label">Рост (см)</label>
                 <InputNumber @bind-Value="request.Height" class="form-control" />
                 <ValidationMessage For="@(() => request.Height)" />
             </div>
 
             <div class="mb-3">
-                <label class="form-label">��� (��)</label>
+                <label class="form-label">Вес (кг)</label>
                 <InputNumber @bind-Value="request.Weight" class="form-control" />
                 <ValidationMessage For="@(() => request.Weight)" />
             </div>
 
+            <!-- СПОСОБЫ ОПРЕДЕЛЕНИЯ ПРОЦЕНТА ЖИРА -->
             <div class="mb-3">
-                <label class="form-label">����� (��)</label>
-                <InputNumber @bind-Value="request.Waist" class="form-control" />
-                <ValidationMessage For="@(() => request.Waist)" />
+                <label class="form-label fw-bold">Способ определения процента жира (выберите один):</label>
+                
+                <div class="form-check">
+                    <input type="radio" name="fatMethod" id="bodyMeasurements" 
+                           @onchange="() => SelectFatMethod(FatMethod.BodyMeasurements)" 
+                           checked="@(selectedFatMethod == FatMethod.BodyMeasurements)"
+                           class="form-check-input" />
+                    <label class="form-check-label" for="bodyMeasurements">По замерам тела</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="radio" name="fatMethod" id="directInput" 
+                           @onchange="() => SelectFatMethod(FatMethod.DirectInput)" 
+                           checked="@(selectedFatMethod == FatMethod.DirectInput)"
+                           class="form-check-input" />
+                    <label class="form-check-label" for="directInput">Прямой ввод процента жира</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="radio" name="fatMethod" id="photoEstimation" 
+                           @onchange="() => SelectFatMethod(FatMethod.PhotoEstimation)" 
+                           checked="@(selectedFatMethod == FatMethod.PhotoEstimation)"
+                           class="form-check-input" />
+                    <label class="form-check-label" for="photoEstimation">Выбрать по фото</label>
+                </div>
             </div>
 
-            <div class="mb-3">
-                <label class="form-label">��� (��)</label>
-                <InputNumber @bind-Value="request.Neck" class="form-control" />
-                <ValidationMessage For="@(() => request.Neck)" />
-            </div>
-
-            <div class="form-check mb-3">
-                <InputCheckbox @bind-Value="request.IsFemale" class="form-check-input" id="femaleCheck" />
-                <label class="form-check-label" for="femaleCheck">�������</label>
-            </div>
-
-            @if (request.IsFemale)
+            <!-- ПРЯМОЙ ВВОД ПРОЦЕНТА ЖИРА -->
+            @if (selectedFatMethod == FatMethod.DirectInput)
             {
                 <div class="mb-3">
-                    <label class="form-label">����� (��)</label>
-                    <InputNumber @bind-Value="request.Hips" class="form-control" />
-                    <ValidationMessage For="@(() => request.Hips)" />
+                    <label class="form-label">Процент жира (%)</label>
+                    <InputNumber @bind-Value="request.FatPercentage" class="form-control" />
+                    <ValidationMessage For="@(() => request.FatPercentage)" />
+                </div>
+            }
+
+            <!-- ВЫБОР ПО ФОТО -->
+            @if (selectedFatMethod == FatMethod.PhotoEstimation)
+            {
+                <div class="mb-3">
+                    <label class="form-label">Выберите ваш диапазон процента жира:</label>
+                    
+                    @if (photoRanges?.Any() == true)
+                    {
+                        <div class="card">
+                            <div class="card-body">
+                                <!-- КАРУСЕЛЬ -->
+                                <div class="d-flex align-items-center justify-content-center position-relative" style="min-height: 250px;">
+                                    <!-- СТРЕЛКА ВЛЕВО -->
+                                    <button type="button" class="btn btn-outline-secondary border-0 position-absolute start-0" 
+                                            @onclick="PreviousPhoto"
+                                            style="z-index: 1;"
+                                            disabled="@(currentPhotoIndex <= 0)">
+                                        ←
+                                    </button>
+
+                                    <!-- ТЕКУЩЕЕ ФОТО -->
+                                    <div class="text-center mx-5" style="min-height: 200px;">
+                                        @{
+                                            var currentRange = photoRanges[currentPhotoIndex];
+                                        }
+                                        <img src="@currentRange.ImageUrl" 
+                                             class="img-fluid rounded shadow" 
+                                             style="max-height: 180px; object-fit: cover;"
+                                             alt="@currentRange.DisplayName" />
+                                        
+                                        <div class="mt-2">
+                                            <h6 class="mb-1">@currentRange.DisplayName</h6>
+                                            <p class="text-muted mb-2 small">@currentRange.Description</p>
+                                            <button type="button" class="btn @(request.SelectedPhotoRange == currentRange.Range ? "btn-primary" : "btn-outline-primary") btn-sm"
+                                                    @onclick="() => SelectPhotoRange(currentRange)">
+                                                @if (request.SelectedPhotoRange == currentRange.Range)
+                                                {
+                                                    <span>✓</span>
+                                                }
+                                                Выбрать этот диапазон
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- СТРЕЛКА ВПРАВО -->
+                                    <button type="button" class="btn btn-outline-secondary border-0 position-absolute end-0" 
+                                            @onclick="NextPhoto"
+                                            style="z-index: 1;"
+                                            disabled="@(currentPhotoIndex >= photoRanges.Count - 1)">
+                                        →
+                                    </button>
+                                </div>
+
+                                <!-- ИНДИКАТОРЫ -->
+                                <div class="d-flex justify-content-center mt-3">
+                                    @for (int i = 0; i < photoRanges.Count; i++)
+                                    {
+                                        <button type="button" class="btn p-0 mx-1" 
+                                                @onclick="() => GoToPhoto(i)"
+                                                style="width: 12px; height: 12px; border-radius: 50%; background-color: @(i == currentPhotoIndex ? "#007bff" : "#dee2e6"); border: none;">
+                                        </button>
+                                    }
+                                </div>
+
+                                <!-- ВЫБРАННЫЙ ДИАПАЗОН -->
+                                @if (!string.IsNullOrEmpty(request.SelectedPhotoRange))
+                                {
+                                    <div class="alert alert-success mt-3 mb-0 text-center">
+                                        <strong>✓ Выбран:</strong> 
+                                        @photoRanges.FirstOrDefault(r => r.Range == request.SelectedPhotoRange)?.DisplayName
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="alert alert-info">
+                            Загрузка вариантов...
+                        </div>
+                    }
+                </div>
+            }
+
+            <!-- ЗАМЕРЫ ТЕЛА -->
+            @if (selectedFatMethod == FatMethod.BodyMeasurements)
+            {
+                <div class="border-top pt-3">
+                    <h6 class="text-muted mb-3">Замеры тела:</h6>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Талия (см)</label>
+                        <InputNumber @bind-Value="request.Waist" class="form-control" />
+                        <ValidationMessage For="@(() => request.Waist)" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Шея (см)</label>
+                        <InputNumber @bind-Value="request.Neck" class="form-control" />
+                        <ValidationMessage For="@(() => request.Neck)" />
+                    </div>
+
+                    @if (request.IsFemale)
+                    {
+                        <div class="mb-3">
+                            <label class="form-label">Бёдра (см)</label>
+                            <InputNumber @bind-Value="request.Hips" class="form-control" />
+                            <ValidationMessage For="@(() => request.Hips)" />
+                        </div>
+                    }
                 </div>
             }
 
             <div class="text-center mt-4">
-                <button type="submit" class="btn btn-custom px-5 py-2">����������</button>
+                <button type="submit" class="btn btn-custom px-5 py-2" disabled="@(!IsFormValid())">
+                    Рассчитать
+                </button>
             </div>
         </EditForm>
     </div>
 </div>
 
-
+<!-- МОДАЛЬНОЕ ОКНО РЕЗУЛЬТАТОВ -->
 @if (showModal)
 {
     <div class="modal fade show d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5);">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header" style="background-color: var(--main-color); color: white;">
-                    <h5 class="modal-title">���������� �������</h5>
+                    <h5 class="modal-title">Результаты расчёта</h5>
                     <button type="button" class="btn-close btn-close-white" @onclick="CloseModal"></button>
                 </div>
                 <div class="modal-body">
                     @if (result != null)
                     {
-                        <p><b>���:</b> @result.Name</p>
-                        <p><b>������������� �������:</b> 
+                        <p><b>Имя:</b> @result.Name</p>
+                        <p><b>Хронологический возраст:</b> @result.ChronologicalAge лет</p>
+                        <p><b>Процент жира:</b> @result.FatPercentage%</p>
+                        <p><b>ИМТ:</b> @result.BMI</p>
+                        <p><b>Биологический возраст:</b> 
                             <span style="color: var(--main-color); font-weight: 600;">@result.BiologicalAge</span>
                         </p>
-                        <p><b>������ ��������:</b> 
+                        <p><b>Статус здоровья:</b> 
                             <span style="color: var(--accent-color); font-weight: 600;">@result.HealthStatus</span>
                         </p>
-                        <p><b>�������:</b> @(result.AgeDifference > 0 ? "+" : "")@result.AgeDifference ���</p>
+                        <p><b>Разница:</b> 
+                            <span style="color: @(result.AgeDifference > 0 ? "red" : "green"); font-weight: 600;">
+                                @(result.AgeDifference > 0 ? "+" : "")@result.AgeDifference лет
+                            </span>
+                        </p>
                     }
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-custom" @onclick="CloseModal">�������</button>
+                    <button class="btn btn-custom" @onclick="CloseModal">Закрыть</button>
                 </div>
             </div>
         </div>
@@ -102,23 +249,134 @@
     private CalculationRequest request = new();
     private CalculationResponse? result;
     private bool showModal = false;
+    private List<PhotoFatRange>? photoRanges;
+    private int currentPhotoIndex = 0;
+
+    // Перечисление для способов определения жира
+    private enum FatMethod { BodyMeasurements, DirectInput, PhotoEstimation }
+    private FatMethod selectedFatMethod = FatMethod.BodyMeasurements;
+
+    [Inject]
+    private IJSRuntime JS { get; set; } = default!;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadPhotoRanges();
+    }
+
+    private async Task OnGenderChanged(bool isFemale)
+    {
+        request.IsFemale = isFemale;
+        await LoadPhotoRanges();
+        request.SelectedPhotoRange = null;
+        StateHasChanged();
+    }
+
+    private void SelectFatMethod(FatMethod method)
+    {
+        selectedFatMethod = method;
+        
+        // Сбрасываем все флаги
+        request.HasOwnFatPercentage = false;
+        request.UsePhotoEstimation = false;
+        
+        // Устанавливаем только выбранный способ
+        switch (method)
+        {
+            case FatMethod.BodyMeasurements:
+                // По умолчанию уже выбран
+                break;
+            case FatMethod.DirectInput:
+                request.HasOwnFatPercentage = true;
+                break;
+            case FatMethod.PhotoEstimation:
+                request.UsePhotoEstimation = true;
+                break;
+        }
+        
+        StateHasChanged();
+    }
+
+    private async Task LoadPhotoRanges()
+    {
+        try
+        {
+            photoRanges = await Api.GetPhotoRangesAsync(request.IsFemale);
+            currentPhotoIndex = 0;
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            photoRanges = new List<PhotoFatRange>();
+        }
+    }
+
+    private void NextPhoto()
+    {
+        if (photoRanges != null && currentPhotoIndex < photoRanges.Count - 1)
+        {
+            currentPhotoIndex++;
+            StateHasChanged();
+        }
+    }
+
+    private void PreviousPhoto()
+    {
+        if (currentPhotoIndex > 0)
+        {
+            currentPhotoIndex--;
+            StateHasChanged();
+        }
+    }
+
+    private void GoToPhoto(int index)
+    {
+        if (photoRanges != null && index >= 0 && index < photoRanges.Count)
+        {
+            currentPhotoIndex = index;
+            StateHasChanged();
+        }
+    }
+
+    private void SelectPhotoRange(PhotoFatRange range)
+    {
+        request.SelectedPhotoRange = range.Range;
+        StateHasChanged();
+    }
+
+    private bool IsFormValid()
+    {
+        if (string.IsNullOrWhiteSpace(request.Name) || 
+            request.ChronologicalAge <= 0 || 
+            request.Height <= 0 || 
+            request.Weight <= 0)
+            return false;
+
+        // Проверка в зависимости от выбранного способа
+        switch (selectedFatMethod)
+        {
+            case FatMethod.BodyMeasurements:
+                if (request.Waist <= 0 || request.Neck <= 0 ||
+                    (request.IsFemale && (!request.Hips.HasValue || request.Hips <= 0)))
+                    return false;
+                break;
+                
+            case FatMethod.DirectInput:
+                if (!request.FatPercentage.HasValue || request.FatPercentage <= 0)
+                    return false;
+                break;
+                
+            case FatMethod.PhotoEstimation:
+                if (string.IsNullOrEmpty(request.SelectedPhotoRange))
+                    return false;
+                break;
+        }
+
+        return true;
+    }
 
     private async Task Calculate()
     {
-        // ���������� ������ ��������� �� ������������� ��������
-        if (request.Height <= 0 || request.Weight <= 0 || request.Waist <= 0 || request.Neck <= 0 ||
-            (request.IsFemale && request.Hips.HasValue && request.Hips.Value <= 0))
-        {
-            await ShowValidationError("��� �������� ������ ���� �������������� �������.");
-            return;
-        }
-
-        if (request.ChronologicalAge <= 0)
-        {
-            await ShowValidationError("������� ������ ���� ������ 0.");
-            return;
-        }
-
         try
         {
             result = await Api.CalculateAsync(request);
@@ -126,7 +384,7 @@
         }
         catch (Exception ex)
         {
-            await ShowValidationError("������ ��� �������: " + ex.Message);
+            await ShowValidationError("Ошибка при расчёте: " + ex.Message);
         }
     }
 
@@ -136,12 +394,8 @@
         result = null;
     }
 
-    // ���������� ����������� ���� � ������� ���������
     private async Task ShowValidationError(string message)
     {
         await JS.InvokeVoidAsync("alert", message);
     }
-
-    [Inject]
-    private IJSRuntime JS { get; set; } = default!;
 }

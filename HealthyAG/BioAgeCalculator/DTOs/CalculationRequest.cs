@@ -1,36 +1,39 @@
-using System.ComponentModel.DataAnnotations;
+п»їusing System.ComponentModel.DataAnnotations;
 
 namespace BioAgeCalculator.DTOs
 {
     public class CalculationRequest
     {
-        [Required(ErrorMessage = "Имя обязательно")]
-        [StringLength(100, ErrorMessage = "Имя не должно превышать 100 символов")]
+        [Required(ErrorMessage = "РРјСЏ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ")]
+        [StringLength(100, ErrorMessage = "РРјСЏ РЅРµ РґРѕР»Р¶РЅРѕ РїСЂРµРІС‹С€Р°С‚СЊ 100 СЃРёРјРІРѕР»РѕРІ")]
         public string Name { get; set; } = string.Empty;
 
-        [Required(ErrorMessage = "Возраст обязателен")]
-        [Range(1, 120, ErrorMessage = "Возраст должен быть от 1 до 120 лет")]
+        [Required(ErrorMessage = "Р’РѕР·СЂР°СЃС‚ РѕР±СЏР·Р°С‚РµР»РµРЅ")]
+        [Range(1, 120, ErrorMessage = "Р’РѕР·СЂР°СЃС‚ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РѕС‚ 1 РґРѕ 120 Р»РµС‚")]
         public int ChronologicalAge { get; set; }
 
-        [Required(ErrorMessage = "Рост обязателен")]
-        [Range(50, 250, ErrorMessage = "Рост должен быть от 50 до 250 см")]
+        [Required(ErrorMessage = "Р РѕСЃС‚ РѕР±СЏР·Р°С‚РµР»РµРЅ")]
+        [Range(50, 250, ErrorMessage = "Р РѕСЃС‚ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РѕС‚ 50 РґРѕ 250 СЃРј")]
         public double Height { get; set; }
 
-        [Required(ErrorMessage = "Вес обязателен")]
-        [Range(20, 300, ErrorMessage = "Вес должен быть от 20 до 300 кг")]
+        [Required(ErrorMessage = "Р’РµСЃ РѕР±СЏР·Р°С‚РµР»РµРЅ")]
+        [Range(20, 300, ErrorMessage = "Р’РµСЃ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РѕС‚ 20 РґРѕ 300 РєРі")]
         public double Weight { get; set; }
 
-        [Required(ErrorMessage = "Обхват талии обязателен")]
-        [Range(30, 200, ErrorMessage = "Обхват талии должен быть от 30 до 200 см")]
-        public double Waist { get; set; }
-
-        [Required(ErrorMessage = "Обхват шеи обязателен")]
-        [Range(20, 60, ErrorMessage = "Обхват шеи должен быть от 20 до 60 см")]
-        public double Neck { get; set; }
-
-        [Range(50, 200, ErrorMessage = "Обхват бедер должен быть от 50 до 200 см")]
+        public double? Waist { get; set; }
+        public double? Neck { get; set; }
         public double? Hips { get; set; }
 
         public bool IsFemale { get; set; }
+
+        // рџ”№ РўСЂРё СЃРїРѕСЃРѕР±Р° РѕРїСЂРµРґРµР»РµРЅРёСЏ РїСЂРѕС†РµРЅС‚Р° Р¶РёСЂР°
+        public bool HasOwnFatPercentage { get; set; }
+        public bool UsePhotoEstimation { get; set; }
+
+        [Range(1, 70, ErrorMessage = "РџСЂРѕС†РµРЅС‚ Р¶РёСЂР° РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РѕС‚ 1 РґРѕ 70")]
+        public double? FatPercentage { get; set; }
+
+        // рџ”№ Р”Р»СЏ С„РѕС‚Рѕ-РѕС†РµРЅРєРё
+        public string? SelectedPhotoRange { get; set; }
     }
 }

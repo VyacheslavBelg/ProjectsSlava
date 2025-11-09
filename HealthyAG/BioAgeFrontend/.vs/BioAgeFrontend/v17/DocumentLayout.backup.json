@@ -1,30 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\slava\\Desktop\\\u0420\u0430\u0431\u043E\u0442\u0430\\BioAgeFrontend\\",
+  "WorkspaceRootPath": "C:\\Users\\slava\\Desktop\\GPO\\BioAgeFrontend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\slava\\Desktop\\\u0420\u0430\u0431\u043E\u0442\u0430\\BioAgeFrontend\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\slava\\Desktop\\\u0420\u0430\u0431\u043E\u0442\u0430\\BioAgeFrontend\\Pages\\BioAge.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\slava\\Desktop\\GPO\\BioAgeFrontend\\Pages\\BioAge.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Pages\\BioAge.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\slava\\Desktop\\\u0420\u0430\u0431\u043E\u0442\u0430\\BioAgeFrontend\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\slava\\Desktop\\GPO\\BioAgeFrontend\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\slava\\Desktop\\\u0420\u0430\u0431\u043E\u0442\u0430\\BioAgeFrontend\\Services\\ApiService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Services\\ApiService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\slava\\Desktop\\\u0420\u0430\u0431\u043E\u0442\u0430\\BioAgeFrontend\\Models\\CalculationResponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\CalculationResponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\slava\\Desktop\\\u0420\u0430\u0431\u043E\u0442\u0430\\BioAgeFrontend\\Models\\CalculationRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\CalculationRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,81 +18,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\slava\\Desktop\\\u0420\u0430\u0431\u043E\u0442\u0430\\BioAgeFrontend\\wwwroot\\index.html",
-              "RelativeDocumentMoniker": "wwwroot\\index.html",
-              "ToolTip": "C:\\Users\\slava\\Desktop\\\u0420\u0430\u0431\u043E\u0442\u0430\\BioAgeFrontend\\wwwroot\\index.html",
-              "RelativeToolTip": "wwwroot\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-14T10:47:29.104Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\slava\\Desktop\\\u0420\u0430\u0431\u043E\u0442\u0430\\BioAgeFrontend\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\slava\\Desktop\\\u0420\u0430\u0431\u043E\u0442\u0430\\BioAgeFrontend\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T07:16:57.329Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\slava\\Desktop\\GPO\\BioAgeFrontend\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\slava\\Desktop\\GPO\\BioAgeFrontend\\wwwroot\\index.html",
+              "RelativeToolTip": "wwwroot\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-11-09T17:07:31.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "BioAge.razor",
-              "DocumentMoniker": "C:\\Users\\slava\\Desktop\\\u0420\u0430\u0431\u043E\u0442\u0430\\BioAgeFrontend\\Pages\\BioAge.razor",
+              "DocumentMoniker": "C:\\Users\\slava\\Desktop\\GPO\\BioAgeFrontend\\Pages\\BioAge.razor",
               "RelativeDocumentMoniker": "Pages\\BioAge.razor",
-              "ToolTip": "C:\\Users\\slava\\Desktop\\\u0420\u0430\u0431\u043E\u0442\u0430\\BioAgeFrontend\\Pages\\BioAge.razor",
+              "ToolTip": "C:\\Users\\slava\\Desktop\\GPO\\BioAgeFrontend\\Pages\\BioAge.razor",
               "RelativeToolTip": "Pages\\BioAge.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAHUBAAAAAAAAAAAuwJABAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-14T07:09:16.57Z",
+              "WhenOpened": "2025-10-23T03:00:14.167Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ApiService.cs",
-              "DocumentMoniker": "C:\\Users\\slava\\Desktop\\\u0420\u0430\u0431\u043E\u0442\u0430\\BioAgeFrontend\\Services\\ApiService.cs",
-              "RelativeDocumentMoniker": "Services\\ApiService.cs",
-              "ToolTip": "C:\\Users\\slava\\Desktop\\\u0420\u0430\u0431\u043E\u0442\u0430\\BioAgeFrontend\\Services\\ApiService.cs",
-              "RelativeToolTip": "Services\\ApiService.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAYwCgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T07:08:42.243Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CalculationResponse.cs",
-              "DocumentMoniker": "C:\\Users\\slava\\Desktop\\\u0420\u0430\u0431\u043E\u0442\u0430\\BioAgeFrontend\\Models\\CalculationResponse.cs",
-              "RelativeDocumentMoniker": "Models\\CalculationResponse.cs",
-              "ToolTip": "C:\\Users\\slava\\Desktop\\\u0420\u0430\u0431\u043E\u0442\u0430\\BioAgeFrontend\\Models\\CalculationResponse.cs",
-              "RelativeToolTip": "Models\\CalculationResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T07:07:03.367Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CalculationRequest.cs",
-              "DocumentMoniker": "C:\\Users\\slava\\Desktop\\\u0420\u0430\u0431\u043E\u0442\u0430\\BioAgeFrontend\\Models\\CalculationRequest.cs",
-              "RelativeDocumentMoniker": "Models\\CalculationRequest.cs",
-              "ToolTip": "C:\\Users\\slava\\Desktop\\\u0420\u0430\u0431\u043E\u0442\u0430\\BioAgeFrontend\\Models\\CalculationRequest.cs",
-              "RelativeToolTip": "Models\\CalculationRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T07:06:54.43Z"
             }
           ]
         }

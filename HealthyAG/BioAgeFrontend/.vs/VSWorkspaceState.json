@@ -4,8 +4,9 @@
     "\\Models",
     "\\Pages",
     "\\Services",
-    "\\wwwroot"
+    "\\wwwroot",
+    "\\wwwroot\\css"
   ],
-  "SelectedNode": "\\Services\\ApiService.cs",
+  "SelectedNode": "\\Pages\\BioAge.razor",
   "PreviewInSolutionExplorer": false
 }

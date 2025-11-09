@@ -7,6 +7,6 @@
     "\\Models",
     "\\Services"
   ],
-  "SelectedNode": "\\Models\\BioAgeCalculation.cs",
+  "SelectedNode": "\\Services\\CalculationService.cs",
   "PreviewInSolutionExplorer": false
 }

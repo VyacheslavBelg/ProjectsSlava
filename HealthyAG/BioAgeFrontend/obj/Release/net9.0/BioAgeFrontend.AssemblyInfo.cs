@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BioAgeFrontend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e52384ed0b859d31c3eed0ffd9d985739956b056")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("BioAgeFrontend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BioAgeFrontend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

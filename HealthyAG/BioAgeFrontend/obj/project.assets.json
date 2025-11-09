@@ -1763,11 +1763,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\slava\\Desktop\\Работа\\BioAgeFrontend\\BioAgeFrontend.csproj",
+      "projectUniqueName": "C:\\Users\\slava\\Desktop\\GPO\\BioAgeFrontend\\BioAgeFrontend.csproj",
       "projectName": "BioAgeFrontend",
-      "projectPath": "C:\\Users\\slava\\Desktop\\Работа\\BioAgeFrontend\\BioAgeFrontend.csproj",
+      "projectPath": "C:\\Users\\slava\\Desktop\\GPO\\BioAgeFrontend\\BioAgeFrontend.csproj",
       "packagesPath": "C:\\Users\\slava\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\slava\\Desktop\\Работа\\BioAgeFrontend\\obj\\",
+      "outputPath": "C:\\Users\\slava\\Desktop\\GPO\\BioAgeFrontend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

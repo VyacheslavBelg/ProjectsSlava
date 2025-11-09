@@ -112,3 +112,65 @@ code {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
     text-align: start;
 }
+
+.btn-custom {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    color: white;
+}
+
+    .btn-custom:hover {
+        background-color: var(--accent-color);
+        border-color: var(--accent-color);
+    }
+
+.card {
+    transition: all 0.3s ease;
+}
+
+    .card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+:root {
+    --main-color: #2c3e50;
+    --accent-color: #3498db;
+}
+
+
+.photo-carousel {
+    transition: all 0.3s ease;
+}
+
+.carousel-indicator {
+    transition: all 0.3s ease;
+}
+
+    .carousel-indicator:hover {
+        transform: scale(1.2);
+    }
+
+.btn-navigation:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.btn-navigation {
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+}
+
+    .btn-navigation:hover:not(:disabled) {
+        background-color: #f8f9fa;
+        transform: scale(1.1);
+    }
+
+    .btn-navigation:disabled {
+        opacity: 0.3;
+        cursor: not-allowed;
+    }

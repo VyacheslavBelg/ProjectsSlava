@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nuagQzSlacE=",
+  "dgSpecHash": "aj4ePHxqkEE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\slava\\Desktop\\Работа\\BioAgeCalculator\\BioAgeCalculator.csproj",
+  "projectFilePath": "C:\\Users\\slava\\Desktop\\GPO\\BioAgeCalculator\\BioAgeCalculator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\slava\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\slava\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

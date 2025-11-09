@@ -24,19 +24,26 @@ namespace BioAgeCalculator.Services
             return new CalculationResult(fatPercentage, bmi, biologicalAge, healthStatus);
         }
 
+        // 🔹 НОВЫЙ МЕТОД для расчета с готовым процентом жира
+        public CalculationResult CalculateWithFatPercentage(BioAgeCalculation input, double fatPercentage)
+        {
+            // Упрощенная валидация только основных полей
+            ValidateBasicInput(input);
+
+            var bmi = CalculateBMI(input.Height, input.Weight);
+            var biologicalAge = CalculateBiologicalAge(input.ChronologicalAge, input.Height,
+                input.Weight, fatPercentage, input.IsFemale);
+            var healthStatus = GetHealthStatus(input.ChronologicalAge, biologicalAge);
+
+            return new CalculationResult(fatPercentage, bmi, biologicalAge, healthStatus);
+        }
+
         private void ValidateInput(BioAgeCalculation input)
         {
             if (input == null)
                 throw new ArgumentNullException(nameof(input));
 
-            if (input.ChronologicalAge < 18 || input.ChronologicalAge > 100)
-                throw new ArgumentException("Возраст должен быть от 18 до 100 лет");
-
-            if (input.Height <= 100 || input.Height > 250)
-                throw new ArgumentException("Рост должен быть от 100 до 250 см");
-
-            if (input.Weight <= 20 || input.Weight > 300)
-                throw new ArgumentException("Вес должен быть от 20 до 300 кг");
+            ValidateBasicInput(input);
 
             if (input.Waist <= 30 || input.Waist > 200)
                 throw new ArgumentException("Обхват талии должен быть от 30 до 200 см");
@@ -59,6 +66,22 @@ namespace BioAgeCalculator.Services
             }
         }
 
+        // 🔹 НОВЫЙ МЕТОД для базовой валидации
+        private void ValidateBasicInput(BioAgeCalculation input)
+        {
+            if (input == null)
+                throw new ArgumentNullException(nameof(input));
+
+            if (input.ChronologicalAge < 18 || input.ChronologicalAge > 100)
+                throw new ArgumentException("Возраст должен быть от 18 до 100 лет");
+
+            if (input.Height <= 100 || input.Height > 250)
+                throw new ArgumentException("Рост должен быть от 100 до 250 см");
+
+            if (input.Weight <= 20 || input.Weight > 300)
+                throw new ArgumentException("Вес должен быть от 20 до 300 кг");
+        }
+
         private double CalculateFatPercentage(BioAgeCalculation input)
         {
             double fatPercentage;
@@ -70,18 +93,18 @@ namespace BioAgeCalculator.Services
 
                 double hipsValue = input.Hips.Value;
 
-                
+
                 fatPercentage = 495 / (1.29579 - 0.35004 * Math.Log10(input.Waist + hipsValue - input.Neck)
                              + 0.22100 * Math.Log10(input.Height)) - 450;
             }
             else
             {
-                
+
                 fatPercentage = 495 / (1.0324 - 0.19077 * Math.Log10(input.Waist - input.Neck)
                              + 0.15456 * Math.Log10(input.Height)) - 450;
             }
 
-           
+
             return Math.Round(Math.Max(5, Math.Min(50, fatPercentage)), 1);
         }
 
@@ -98,7 +121,7 @@ namespace BioAgeCalculator.Services
             var actualBMI = weight / (heightMeters * heightMeters);
             var normalFat = GetNormalFat(chronologicalAge, isFemale);
 
-            
+
             var k_fat = 0.3;
             var k_bmi = 0.2;
             var k_metabolic = 0.1;
@@ -111,7 +134,7 @@ namespace BioAgeCalculator.Services
 
             var biologicalAge = chronologicalAge + deltaFat + deltaBMI + deltaMetabolic;
 
-            
+
             return Math.Round(Math.Max(chronologicalAge - 10, Math.Min(chronologicalAge + 20, biologicalAge)), 1);
         }
 

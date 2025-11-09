@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VMSUDEZT2ws=",
+  "dgSpecHash": "NCZ54Nam8J4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\slava\\Desktop\\Работа\\BioAgeFrontend\\BioAgeFrontend.csproj",
+  "projectFilePath": "C:\\Users\\slava\\Desktop\\GPO\\BioAgeFrontend\\BioAgeFrontend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\slava\\.nuget\\packages\\microsoft.aspnetcore.authorization\\9.0.8\\microsoft.aspnetcore.authorization.9.0.8.nupkg.sha512",
     "C:\\Users\\slava\\.nuget\\packages\\microsoft.aspnetcore.components\\9.0.8\\microsoft.aspnetcore.components.9.0.8.nupkg.sha512",

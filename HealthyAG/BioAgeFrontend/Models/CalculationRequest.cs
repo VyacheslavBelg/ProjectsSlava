@@ -10,5 +10,10 @@ namespace BioAgeFrontend.Models
         public double Neck { get; set; }
         public double? Hips { get; set; }
         public bool IsFemale { get; set; }
+
+        public bool HasOwnFatPercentage { get; set; }
+        public bool UsePhotoEstimation { get; set; }
+        public double? FatPercentage { get; set; }
+        public string? SelectedPhotoRange { get; set; }
     }
 }
