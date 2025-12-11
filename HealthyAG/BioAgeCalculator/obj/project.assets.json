@@ -2537,11 +2537,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\slava\\Desktop\\GPO\\BioAgeCalculator\\BioAgeCalculator.csproj",
+      "projectUniqueName": "D:\\ProjectsSlava\\HealthyAG\\BioAgeCalculator\\BioAgeCalculator.csproj",
       "projectName": "BioAgeCalculator",
-      "projectPath": "C:\\Users\\slava\\Desktop\\GPO\\BioAgeCalculator\\BioAgeCalculator.csproj",
+      "projectPath": "D:\\ProjectsSlava\\HealthyAG\\BioAgeCalculator\\BioAgeCalculator.csproj",
       "packagesPath": "C:\\Users\\slava\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\slava\\Desktop\\GPO\\BioAgeCalculator\\obj\\",
+      "outputPath": "D:\\ProjectsSlava\\HealthyAG\\BioAgeCalculator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

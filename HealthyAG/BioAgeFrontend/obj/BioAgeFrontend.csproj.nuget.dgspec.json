@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\slava\\Desktop\\GPO\\BioAgeFrontend\\BioAgeFrontend.csproj": {}
+    "D:\\ProjectsSlava\\HealthyAG\\BioAgeFrontend\\BioAgeFrontend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\slava\\Desktop\\GPO\\BioAgeFrontend\\BioAgeFrontend.csproj": {
+    "D:\\ProjectsSlava\\HealthyAG\\BioAgeFrontend\\BioAgeFrontend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\slava\\Desktop\\GPO\\BioAgeFrontend\\BioAgeFrontend.csproj",
+        "projectUniqueName": "D:\\ProjectsSlava\\HealthyAG\\BioAgeFrontend\\BioAgeFrontend.csproj",
         "projectName": "BioAgeFrontend",
-        "projectPath": "C:\\Users\\slava\\Desktop\\GPO\\BioAgeFrontend\\BioAgeFrontend.csproj",
+        "projectPath": "D:\\ProjectsSlava\\HealthyAG\\BioAgeFrontend\\BioAgeFrontend.csproj",
         "packagesPath": "C:\\Users\\slava\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\slava\\Desktop\\GPO\\BioAgeFrontend\\obj\\",
+        "outputPath": "D:\\ProjectsSlava\\HealthyAG\\BioAgeFrontend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

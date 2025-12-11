@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\BioAgeCalculator",
+    "\\BioAgeCalculator\\Controllers",
+    "\\BioAgeCalculator\\Services",
+    "\\BioAgeFrontend",
+    "\\BioAgeFrontend\\Pages"
+  ],
+  "SelectedNode": "\\BioAgeFrontend\\Pages\\BioAge.razor",
+  "PreviewInSolutionExplorer": false
+}
