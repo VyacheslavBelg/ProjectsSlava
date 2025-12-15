@@ -19,13 +19,13 @@ namespace FBIArchive.Controllers
 		public async Task<IActionResult> Register([FromBody] UserRegistrationDto dto)
 		{
 			var result = await _authService.RegisterUserAsync(dto);
+			
 
 			if (!result.IsSuccess)
 			{
 
 				return BadRequest(result.ErrorMessage);
 			}
-
 
 			return Ok(new
 			{

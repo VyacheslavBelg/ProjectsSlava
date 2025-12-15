@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Controllers",
+    "\\Data",
+    "\\Middleware",
+    "\\Models",
+    "\\Models\\Analysis",
+    "\\Models\\User",
+    "\\Services"
+  ],
+  "SelectedNode": "\\Services\\AnalysisService.cs",
+  "PreviewInSolutionExplorer": false
+}
