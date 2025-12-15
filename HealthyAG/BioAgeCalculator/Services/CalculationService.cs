@@ -24,10 +24,8 @@ namespace BioAgeCalculator.Services
             return new CalculationResult(fatPercentage, bmi, biologicalAge, healthStatus);
         }
 
-        // 🔹 НОВЫЙ МЕТОД для расчета с готовым процентом жира
         public CalculationResult CalculateWithFatPercentage(BioAgeCalculation input, double fatPercentage)
         {
-            // Упрощенная валидация только основных полей
             ValidateBasicInput(input);
 
             var bmi = CalculateBMI(input.Height, input.Weight);
@@ -66,7 +64,6 @@ namespace BioAgeCalculator.Services
             }
         }
 
-        // 🔹 НОВЫЙ МЕТОД для базовой валидации
         private void ValidateBasicInput(BioAgeCalculation input)
         {
             if (input == null)
