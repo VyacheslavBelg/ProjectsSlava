@@ -24,7 +24,7 @@ namespace BioAgeCalculator.Controllers
             _logger = logger;
         }
 
-        // 🔹 НОВЫЙ ЭНДПОИНТ: Получить доступные диапазоны фото с учетом пола
+       
         [HttpGet("photo-ranges/{isFemale}")]
         public ActionResult<PhotoFatRangesResponse> GetPhotoRanges(bool isFemale)
         {
@@ -147,14 +147,14 @@ namespace BioAgeCalculator.Controllers
                               $"Выбранный диапазон: {request.SelectedPhotoRange}");
 
 
-                // 🔹 Валидация способа ввода
+              
                 var validationResult = ValidateInputMethod(request);
                 if (!validationResult.IsValid)
                 {
                     return BadRequest(validationResult.ErrorMessage);
                 }
 
-                // Проверка основных данных
+               
                 if (request.Height <= 0 || request.Weight <= 0 || request.ChronologicalAge <= 0)
                 {
                     return BadRequest("Рост, вес и возраст должны быть положительными числами.");
@@ -175,10 +175,10 @@ namespace BioAgeCalculator.Controllers
                 CalculationResult result;
                 double finalFatPercentage;
 
-                // 🔹 Три способа определения процента жира
+             
                 if (request.UsePhotoEstimation && !string.IsNullOrEmpty(request.SelectedPhotoRange))
                 {
-                    // Способ 1: Оценка по фото
+                    
                     finalFatPercentage = GetFatPercentageFromPhotoRange(request.SelectedPhotoRange, request.IsFemale);
 
                     _logger.LogInformation($"Расчет по фото: диапазон={request.SelectedPhotoRange}, " +
@@ -190,14 +190,14 @@ namespace BioAgeCalculator.Controllers
                 }
                 else if (request.HasOwnFatPercentage && request.FatPercentage.HasValue)
                 {
-                    // Способ 2: Прямой ввод процента жира
+                   
                     finalFatPercentage = request.FatPercentage.Value;
                     calculation.FatPercentage = finalFatPercentage;
                     result = _calculationService.CalculateWithFatPercentage(calculation, finalFatPercentage);
                 }
                 else
                 {
-                    // Способ 3: Расчет по замерам тела
+                 
                     result = _calculationService.Calculate(calculation);
                     finalFatPercentage = result.FatPercentage;
                     calculation.FatPercentage = finalFatPercentage;
@@ -228,13 +228,13 @@ namespace BioAgeCalculator.Controllers
             }
         }
 
-        // 🔹 Вспомогательные методы
+       
         private (bool IsValid, string ErrorMessage) ValidateInputMethod(CalculationRequest request)
         {
             int methodCount = 0;
 
             if (!request.HasOwnFatPercentage && !request.UsePhotoEstimation)
-                methodCount++; // Расчет по замерам
+                methodCount++; 
 
             if (request.HasOwnFatPercentage)
                 methodCount++;
@@ -260,24 +260,24 @@ namespace BioAgeCalculator.Controllers
             {
                 return range switch
                 {
-                    "15-19" => 17.0,    // Среднее значение для женщин
+                    "15-19" => 17.0,   
                     "20-29" => 24.5,
                     "30-39" => 34.5,
                     "40-49" => 44.5,
                     "50-plus" => 55.0,
-                    _ => 30.0 // Значение по умолчанию для женщин
+                    _ => 30.0
                 };
             }
             else
             {
                 return range switch
                 {
-                    "5-9" => 7.0,    // Среднее значение для мужчин
+                    "5-9" => 7.0,    
                     "10-19" => 14.5,
                     "20-29" => 24.5,
                     "30-39" => 34.5,
                     "40-plus" => 45.0,
-                    _ => 20.0 // Значение по умолчанию для мужчин
+                    _ => 20.0 
                 };
             }
         }
