@@ -26,14 +26,11 @@ namespace BioAgeCalculator.DTOs
 
         public bool IsFemale { get; set; }
 
-        // 🔹 Три способа определения процента жира
         public bool HasOwnFatPercentage { get; set; }
         public bool UsePhotoEstimation { get; set; }
 
         [Range(1, 70, ErrorMessage = "Процент жира должен быть от 1 до 70")]
         public double? FatPercentage { get; set; }
-
-        // 🔹 Для фото-оценки
         public string? SelectedPhotoRange { get; set; }
     }
 }
