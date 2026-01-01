@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\FBIArchiveBackend\\Controllers",
+    "\\FBIArchiveBackend\\Repositories",
+    "\\FBIArchiveBackend\\Services",
+    "\\FBIArchiveClient",
+    "\\FBIArchiveClient\\src",
+    "\\FBIArchiveClient\\src\\components",
+    "\\FBIArchiveClient\\src\\constants",
+    "\\FBIArchiveClient\\src\\pages",
+    "\\FBIArchiveClient\\src\\utils"
+  ],
+  "SelectedNode": "\\FBIArchiveClient\\src\\main.jsx",
+  "PreviewInSolutionExplorer": false
+}

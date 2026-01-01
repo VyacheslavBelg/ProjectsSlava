@@ -3646,11 +3646,7 @@ D:\ProjectsSlava\HealthyAG\BioAgeFrontend\bin\Debug\net9.0\wwwroot\_framework\do
 D:\ProjectsSlava\HealthyAG\BioAgeFrontend\bin\Debug\net9.0\wwwroot\_framework\icudt_CJK.tjcz0u77k5.dat.gz
 D:\ProjectsSlava\HealthyAG\BioAgeFrontend\bin\Debug\net9.0\wwwroot\_framework\icudt_EFIGS.tptq2av103.dat.gz
 D:\ProjectsSlava\HealthyAG\BioAgeFrontend\bin\Debug\net9.0\wwwroot\_framework\icudt_no_CJK.lfu7j35m59.dat.gz
-D:\ProjectsSlava\HealthyAG\BioAgeFrontend\bin\Debug\net9.0\wwwroot\_framework\BioAgeFrontend.5twc3lkzjh.wasm
-D:\ProjectsSlava\HealthyAG\BioAgeFrontend\bin\Debug\net9.0\wwwroot\_framework\BioAgeFrontend.c8jrrx3seu.pdb
 D:\ProjectsSlava\HealthyAG\BioAgeFrontend\bin\Debug\net9.0\wwwroot\_framework\blazor.boot.json
-D:\ProjectsSlava\HealthyAG\BioAgeFrontend\bin\Debug\net9.0\wwwroot\_framework\BioAgeFrontend.5twc3lkzjh.wasm.gz
-D:\ProjectsSlava\HealthyAG\BioAgeFrontend\bin\Debug\net9.0\wwwroot\_framework\BioAgeFrontend.c8jrrx3seu.pdb.gz
 D:\ProjectsSlava\HealthyAG\BioAgeFrontend\bin\Debug\net9.0\wwwroot\_framework\blazor.boot.json.gz
 D:\ProjectsSlava\HealthyAG\BioAgeFrontend\bin\Debug\net9.0\BioAgeFrontend.staticwebassets.runtime.json
 D:\ProjectsSlava\HealthyAG\BioAgeFrontend\bin\Debug\net9.0\BioAgeFrontend.staticwebassets.endpoints.json
@@ -4315,9 +4311,6 @@ D:\ProjectsSlava\HealthyAG\BioAgeFrontend\obj\Debug\net9.0\compressed\gaynnpxg1k
 D:\ProjectsSlava\HealthyAG\BioAgeFrontend\obj\Debug\net9.0\compressed\cvqu5uvcqp-tjcz0u77k5.gz
 D:\ProjectsSlava\HealthyAG\BioAgeFrontend\obj\Debug\net9.0\compressed\1dprscolav-tptq2av103.gz
 D:\ProjectsSlava\HealthyAG\BioAgeFrontend\obj\Debug\net9.0\compressed\li523k3g6h-lfu7j35m59.gz
-D:\ProjectsSlava\HealthyAG\BioAgeFrontend\obj\Debug\net9.0\compressed\2uu6pvtfb0-5twc3lkzjh.gz
-D:\ProjectsSlava\HealthyAG\BioAgeFrontend\obj\Debug\net9.0\compressed\b8f5da9gs0-c8jrrx3seu.gz
-D:\ProjectsSlava\HealthyAG\BioAgeFrontend\obj\Debug\net9.0\compressed\x9zo466468-2bsa1nodn4.gz
 D:\ProjectsSlava\HealthyAG\BioAgeFrontend\obj\Debug\net9.0\staticwebassets.build.json
 D:\ProjectsSlava\HealthyAG\BioAgeFrontend\obj\Debug\net9.0\staticwebassets.build.json.cache
 D:\ProjectsSlava\HealthyAG\BioAgeFrontend\obj\Debug\net9.0\staticwebassets.development.json
@@ -4327,3 +4320,10 @@ D:\ProjectsSlava\HealthyAG\BioAgeFrontend\obj\Debug\net9.0\BioAgeFrontend.dll
 D:\ProjectsSlava\HealthyAG\BioAgeFrontend\obj\Debug\net9.0\refint\BioAgeFrontend.dll
 D:\ProjectsSlava\HealthyAG\BioAgeFrontend\obj\Debug\net9.0\BioAgeFrontend.pdb
 D:\ProjectsSlava\HealthyAG\BioAgeFrontend\obj\Debug\net9.0\ref\BioAgeFrontend.dll
+D:\ProjectsSlava\HealthyAG\BioAgeFrontend\bin\Debug\net9.0\wwwroot\_framework\BioAgeFrontend.7247x8vqo4.wasm
+D:\ProjectsSlava\HealthyAG\BioAgeFrontend\bin\Debug\net9.0\wwwroot\_framework\BioAgeFrontend.r580oggafx.pdb
+D:\ProjectsSlava\HealthyAG\BioAgeFrontend\bin\Debug\net9.0\wwwroot\_framework\BioAgeFrontend.7247x8vqo4.wasm.gz
+D:\ProjectsSlava\HealthyAG\BioAgeFrontend\bin\Debug\net9.0\wwwroot\_framework\BioAgeFrontend.r580oggafx.pdb.gz
+D:\ProjectsSlava\HealthyAG\BioAgeFrontend\obj\Debug\net9.0\compressed\2uu6pvtfb0-7247x8vqo4.gz
+D:\ProjectsSlava\HealthyAG\BioAgeFrontend\obj\Debug\net9.0\compressed\b8f5da9gs0-r580oggafx.gz
+D:\ProjectsSlava\HealthyAG\BioAgeFrontend\obj\Debug\net9.0\compressed\x9zo466468-5apj7l6tzb.gz
