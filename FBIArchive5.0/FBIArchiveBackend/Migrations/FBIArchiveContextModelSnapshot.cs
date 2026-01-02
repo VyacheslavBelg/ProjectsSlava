@@ -89,7 +89,7 @@ namespace FBIArchive.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("OrganizationId")
+                    b.Property<int>("OrganizationId")
                         .HasColumnType("int");
 
                     b.Property<string>("PhotoUrl")
@@ -166,7 +166,7 @@ namespace FBIArchive.Migrations
                     b.Property<DateTime?>("DeathDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("InvestigationDepartmentId")
+                    b.Property<int>("InvestigationDepartmentId")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -342,7 +342,9 @@ namespace FBIArchive.Migrations
                 {
                     b.HasOne("FBIArchive.Models.Organization", "Organization")
                         .WithMany("Defendants")
-                        .HasForeignKey("OrganizationId");
+                        .HasForeignKey("OrganizationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Organization");
                 });
@@ -370,7 +372,9 @@ namespace FBIArchive.Migrations
                 {
                     b.HasOne("FBIArchive.Models.InvestigationDepartment", "InvestigationDepartment")
                         .WithMany("Employees")
-                        .HasForeignKey("InvestigationDepartmentId");
+                        .HasForeignKey("InvestigationDepartmentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("InvestigationDepartment");
                 });

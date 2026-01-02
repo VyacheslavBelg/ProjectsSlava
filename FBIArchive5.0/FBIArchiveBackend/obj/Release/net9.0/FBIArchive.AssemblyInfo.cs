@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FBIArchive")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77ab103c27e655801f80e4fc7c7c5c8e8ff66858")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37ce9680d23522752aaa76fa44d968036423d2b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("FBIArchive")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FBIArchive")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

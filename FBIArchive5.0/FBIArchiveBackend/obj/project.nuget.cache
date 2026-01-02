@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "076u0iu23Y0=",
+  "dgSpecHash": "s7ZLaidQ2tk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\slava\\Desktop\\Универ\\3 курс\\Курсовая БД\\FBIArchive5.0\\FBIArchiveBackend\\FBIArchive.csproj",
+  "projectFilePath": "D:\\Git\\ProjectsSlava\\FBIArchive5.0\\FBIArchiveBackend\\FBIArchive.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\slava\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\slava\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
