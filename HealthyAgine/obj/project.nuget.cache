@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "MCvhTOH13FA=",
+  "success": true,
+  "projectFilePath": "D:\\Git\\ProjectsSlava\\HealthyAgine\\HealthyAgine.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\slava\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.1\\microsoft.aspnetcore.openapi.10.0.1.nupkg.sha512",
+    "C:\\Users\\slava\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

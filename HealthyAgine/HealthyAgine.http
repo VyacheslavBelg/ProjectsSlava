@@ -1,0 +1,6 @@
+@HealthyAgine_HostAddress = http://localhost:5234
+
+GET {{HealthyAgine_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
