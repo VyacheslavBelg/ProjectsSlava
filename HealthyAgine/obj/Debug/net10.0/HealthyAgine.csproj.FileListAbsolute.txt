@@ -32,3 +32,4 @@ D:\Git\ProjectsSlava\HealthyAgine\obj\Debug\net10.0\refint\HealthyAgine.dll
 D:\Git\ProjectsSlava\HealthyAgine\obj\Debug\net10.0\HealthyAgine.pdb
 D:\Git\ProjectsSlava\HealthyAgine\obj\Debug\net10.0\HealthyAgine.genruntimeconfig.cache
 D:\Git\ProjectsSlava\HealthyAgine\obj\Debug\net10.0\ref\HealthyAgine.dll
+D:\Git\ProjectsSlava\HealthyAgine\bin\Debug\net10.0\Scalar.AspNetCore.dll

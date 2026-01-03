@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v10.0": {
       "HealthyAgine/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.OpenApi": "10.0.1"
+          "Microsoft.AspNetCore.OpenApi": "10.0.1",
+          "Scalar.AspNetCore": "2.11.10"
         },
         "runtime": {
           "HealthyAgine.dll": {}
@@ -30,6 +31,14 @@
           "lib/net8.0/Microsoft.OpenApi.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "Scalar.AspNetCore/2.11.10": {
+        "runtime": {
+          "lib/net10.0/Scalar.AspNetCore.dll": {
+            "assemblyVersion": "2.11.10.0",
+            "fileVersion": "2.11.10.0"
           }
         }
       }
@@ -54,6 +63,13 @@
       "sha512": "sha512-GGYLfzV/G/ct80OZ45JxnWP7NvMX1BCugn/lX7TH5o0lcVaviavsLMTxmFV2AybXWjbi3h6FF1vgZiTK6PXndw==",
       "path": "microsoft.openapi/2.0.0",
       "hashPath": "microsoft.openapi.2.0.0.nupkg.sha512"
+    },
+    "Scalar.AspNetCore/2.11.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tkiZTK3pxiniTl9sVz5WY2bn8Y+vaFu9yo2Qrs4guMXoBB3wTbKwXIwFvcZnpantGeYxSk9/+UZ5BQ6eFG69Dw==",
+      "path": "scalar.aspnetcore/2.11.10",
+      "hashPath": "scalar.aspnetcore.2.11.10.nupkg.sha512"
     }
   }
 }
