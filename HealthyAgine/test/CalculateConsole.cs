@@ -1,4 +1,4 @@
-using System;
+/* using System;
 
 public class CalculateMbAge
 {
@@ -57,3 +57,5 @@ public class CalculateMbAge
         Console.WriteLine($"Интерпретация: {interpretation}");
     }
 }
+
+*/
