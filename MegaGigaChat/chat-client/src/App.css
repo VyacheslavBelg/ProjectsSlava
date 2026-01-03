@@ -1,0 +1,25 @@
+
+body {
+  background-color: #e9ecef;
+}
+
+.card {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.card-body::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+.card-body::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 4px;
+}
+
+.card-body::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\FBIArchiveBackend",
+    "\\FBIArchiveBackend\\Controllers",
+    "\\FBIArchiveBackend\\Data",
+    "\\FBIArchiveBackend\\Repositories",
+    "\\FBIArchiveBackend\\Services"
+  ],
+  "SelectedNode": "\\FBIArchiveBackend\\Services\\IArchiveService.cs",
+  "PreviewInSolutionExplorer": false
+}

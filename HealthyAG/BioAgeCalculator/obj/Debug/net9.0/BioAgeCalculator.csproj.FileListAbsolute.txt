@@ -1,0 +1,8 @@
+C:\Users\slava\Desktop\Работа\BioAgeCalculator\obj\Debug\net9.0\BioAgeCalculator.csproj.AssemblyReference.cache
+C:\Users\slava\Desktop\Работа\BioAgeCalculator\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\slava\Desktop\Работа\BioAgeCalculator\obj\Debug\net9.0\BioAgeCalculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\slava\Desktop\Работа\BioAgeCalculator\obj\Debug\net9.0\BioAgeCalculator.AssemblyInfoInputs.cache
+C:\Users\slava\Desktop\Работа\BioAgeCalculator\obj\Debug\net9.0\BioAgeCalculator.AssemblyInfo.cs
+C:\Users\slava\Desktop\Работа\BioAgeCalculator\obj\Debug\net9.0\BioAgeCalculator.csproj.CoreCompileInputs.cache
+C:\Users\slava\Desktop\Работа\BioAgeCalculator\obj\Debug\net9.0\BioAgeCalculator.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\slava\Desktop\Работа\BioAgeCalculator\obj\Debug\net9.0\BioAgeCalculator.MvcApplicationPartsAssemblyInfo.cache
