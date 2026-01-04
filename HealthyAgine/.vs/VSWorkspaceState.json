@@ -4,6 +4,7 @@
     "\\Controllers",
     "\\Data",
     "\\Models",
+    "\\Properties",
     "\\Repositories",
     "\\Services",
     "\\test"

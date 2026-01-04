@@ -50,5 +50,4 @@ namespace HealthyAgine.Models
         public UserInputDto User { get; set; } = new UserInputDto();
         public PersonParametrs Parametrs { get; set; } = new PersonParametrs();
     }
-
 }

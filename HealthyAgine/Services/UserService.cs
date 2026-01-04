@@ -125,5 +125,45 @@ namespace HealthyAgine.Services
 
         }
 
+        public async Task<UserOutputDto> CalculateWithPhoto(UserInputDto input, int photo_num)
+        {
+            float fat;
+
+            if (input.Sex) // мужчина
+            {
+                fat = photo_num switch
+                {
+                    1 => 9f,
+                    2 => 15f,
+                    3 => 22f,
+                    4 => 28f,
+                    _ => 35f
+                };
+            }
+            else // женщина
+            {
+                fat = photo_num switch
+                {
+                    1 => 15f,
+                    2 => 22f,
+                    3 => 29f,
+                    4 => 36f,
+                    _ => 45f
+                };
+            }
+
+            var user = new UserInputDto
+            {
+                Name = input.Name,
+                ChronoAge = input.ChronoAge,
+                Sex = input.Sex,
+                HeightCm = input.HeightCm,
+                Weight = input.Weight,
+                Fat = fat
+            };
+
+            return await Calculate(user);
+        }
+
     }
 }

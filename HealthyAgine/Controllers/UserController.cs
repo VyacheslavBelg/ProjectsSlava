@@ -28,5 +28,11 @@ namespace HealthyAgine.Controllers
             return await _userService.CalculateWithFat(input.User, input.Parametrs);
         }
 
+        [HttpPost("calculate_with_photo")]
+        public async Task<UserOutputDto> CalculateWithPhoto([FromBody] UserInputDto input, int photo_num)
+        {
+            return await _userService.CalculateWithPhoto(input, photo_num);
+        }
+
     }
 }
