@@ -38,4 +38,17 @@ namespace HealthyAgine.Models
         public float deltaAge { get; set; }
     }
 
+    public class PersonParametrs
+    {
+        public int Waist { get; set; }
+        public int Neck { get; set; }
+        public int? Hips { get; set; }
+    }
+
+    public class UserWithFatInputDto
+    {
+        public UserInputDto User { get; set; } = new UserInputDto();
+        public PersonParametrs Parametrs { get; set; } = new PersonParametrs();
+    }
+
 }

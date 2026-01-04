@@ -1,6 +1,8 @@
 using HealthyAgine.Models;
 using Microsoft.EntityFrameworkCore;
 using HealthyAgine.Repositories;
+using Microsoft.VisualBasic.FileIO;
+using System.Reflection.Metadata.Ecma335;
 
 
 namespace HealthyAgine.Services
@@ -78,5 +80,50 @@ namespace HealthyAgine.Services
 
             return output;
         }
+
+        public async Task<UserOutputDto> CalculateWithFat(UserInputDto input, PersonParametrs parametrs)
+        {
+            double Fat;
+
+            if (input.Sex) 
+            {
+                
+                double waist = parametrs.Waist;
+                double neck = parametrs.Neck; 
+                double height = input.HeightCm;
+
+                double logWaistMinusNeck = Math.Log10(waist - neck);
+                double logHeight = Math.Log10(height);
+
+                Fat = 495.0 / (1.0324 - 0.19077 * logWaistMinusNeck + 0.15456 * logHeight) - 450.0;
+            }
+            else 
+            {
+                
+                double waist = parametrs.Waist;
+                double hips = (float) parametrs.Hips!;
+                double neck = parametrs.Neck;
+                double height = input.HeightCm;
+
+                double logWaistPlusHipsMinusNeck = Math.Log10(waist + hips - neck);
+                double logHeight = Math.Log10(height);
+
+                Fat = 495.0 / (1.29579 - 0.35004 * logWaistPlusHipsMinusNeck + 0.22100 * logHeight) - 450.0;
+            }
+
+            var user = new UserInputDto
+            {
+                Name = input.Name,
+                ChronoAge = input.ChronoAge,
+                Sex = input.Sex,
+                HeightCm = input.HeightCm,
+                Weight = input.Weight,
+                Fat = (float) Fat
+            };
+
+            return await Calculate(user);
+
+        }
+
     }
 }
