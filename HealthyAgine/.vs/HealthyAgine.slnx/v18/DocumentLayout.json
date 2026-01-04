@@ -3,32 +3,44 @@
   "WorkspaceRootPath": "D:\\Git\\ProjectsSlava\\HealthyAgine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\ProjectsSlava\\HealthyAgine\\docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\ProjectsSlava\\HealthyAgine\\healthy-aging-front\\nginx.conf||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:healthy-aging-front\\nginx.conf||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\ProjectsSlava\\HealthyAgine\\healthy-aging-front\\Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:healthy-aging-front\\Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\ProjectsSlava\\HealthyAgine\\healthy-aging-front\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:healthy-aging-front\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\ProjectsSlava\\HealthyAgine\\HealthyAgineBackend\\Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HealthyAgineBackend\\Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\ProjectsSlava\\HealthyAgine\\HealthyAgineBackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HealthyAgineBackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\ProjectsSlava\\HealthyAgine\\HealthyAgineBackend\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HealthyAgineBackend\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\ProjectsSlava\\HealthyAgine\\HealthyAgineBackend\\Controllers\\UserController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HealthyAgineBackend\\Controllers\\UserController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\ProjectsSlava\\HealthyAgine\\healthy-aging-front\\Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:healthy-aging-front\\Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\ProjectsSlava\\HealthyAgine\\docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\ProjectsSlava\\HealthyAgine\\healthy-aging-front\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:healthy-aging-front\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\ProjectsSlava\\HealthyAgine\\healthy-aging-front\\src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:healthy-aging-front\\src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\ProjectsSlava\\HealthyAgine\\healthy-aging-front\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:healthy-aging-front\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\ProjectsSlava\\HealthyAgine\\HealthyAgineBackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HealthyAgineBackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\ProjectsSlava\\HealthyAgine\\HealthyAgineBackend\\HealthyAgine.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
@@ -37,10 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\ProjectsSlava\\HealthyAgine\\HealthyAgineBackend\\HealthyAgine.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HealthyAgineBackend\\HealthyAgine.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\ProjectsSlava\\HealthyAgine\\healthy-aging-front\\src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:healthy-aging-front\\src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\ProjectsSlava\\HealthyAgine\\healthy-aging-front\\src\\App.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -54,50 +62,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\Git\\ProjectsSlava\\HealthyAgine\\healthy-aging-front\\index.html",
+              "RelativeDocumentMoniker": "healthy-aging-front\\index.html",
+              "ToolTip": "D:\\Git\\ProjectsSlava\\HealthyAgine\\healthy-aging-front\\index.html",
+              "RelativeToolTip": "healthy-aging-front\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-01-04T19:57:41.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "vite.config.js",
-              "DocumentMoniker": "D:\\Git\\ProjectsSlava\\HealthyAgine\\healthy-aging-front\\vite.config.js",
-              "RelativeDocumentMoniker": "healthy-aging-front\\vite.config.js",
-              "ToolTip": "D:\\Git\\ProjectsSlava\\HealthyAgine\\healthy-aging-front\\vite.config.js",
-              "RelativeToolTip": "healthy-aging-front\\vite.config.js",
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Git\\ProjectsSlava\\HealthyAgine\\HealthyAgineBackend\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "HealthyAgineBackend\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Git\\ProjectsSlava\\HealthyAgine\\HealthyAgineBackend\\Controllers\\UserController.cs",
+              "RelativeToolTip": "HealthyAgineBackend\\Controllers\\UserController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-01-04T19:28:11.871Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T19:56:23.709Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Git\\ProjectsSlava\\HealthyAgine\\HealthyAgineBackend\\appsettings.json",
-              "RelativeDocumentMoniker": "HealthyAgineBackend\\appsettings.json",
-              "ToolTip": "D:\\Git\\ProjectsSlava\\HealthyAgine\\HealthyAgineBackend\\appsettings.json",
-              "RelativeToolTip": "HealthyAgineBackend\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-04T19:18:57.505Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HealthyAgine.http",
-              "DocumentMoniker": "D:\\Git\\ProjectsSlava\\HealthyAgine\\HealthyAgineBackend\\HealthyAgine.http",
-              "RelativeDocumentMoniker": "HealthyAgineBackend\\HealthyAgine.http",
-              "ToolTip": "D:\\Git\\ProjectsSlava\\HealthyAgine\\HealthyAgineBackend\\HealthyAgine.http",
-              "RelativeToolTip": "HealthyAgineBackend\\HealthyAgine.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2026-01-04T19:18:54.836Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "HealthyAgine.csproj",
               "DocumentMoniker": "D:\\Git\\ProjectsSlava\\HealthyAgine\\HealthyAgineBackend\\HealthyAgine.csproj",
               "RelativeDocumentMoniker": "HealthyAgineBackend\\HealthyAgine.csproj",
@@ -105,90 +100,125 @@
               "RelativeToolTip": "HealthyAgineBackend\\HealthyAgine.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-04T19:18:53.584Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-04T19:18:53.584Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "D:\\Git\\ProjectsSlava\\HealthyAgine\\docker-compose.yml",
               "RelativeDocumentMoniker": "docker-compose.yml",
               "ToolTip": "D:\\Git\\ProjectsSlava\\HealthyAgine\\docker-compose.yml",
               "RelativeToolTip": "docker-compose.yml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABIAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
               "WhenOpened": "2026-01-04T19:17:46.512Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Dockerfile",
               "DocumentMoniker": "D:\\Git\\ProjectsSlava\\HealthyAgine\\HealthyAgineBackend\\Dockerfile",
               "RelativeDocumentMoniker": "HealthyAgineBackend\\Dockerfile",
               "ToolTip": "D:\\Git\\ProjectsSlava\\HealthyAgine\\HealthyAgineBackend\\Dockerfile",
               "RelativeToolTip": "HealthyAgineBackend\\Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-01-04T19:15:01.516Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "D:\\Git\\ProjectsSlava\\HealthyAgine\\healthy-aging-front\\Dockerfile",
-              "RelativeDocumentMoniker": "healthy-aging-front\\Dockerfile",
-              "ToolTip": "D:\\Git\\ProjectsSlava\\HealthyAgine\\healthy-aging-front\\Dockerfile",
-              "RelativeToolTip": "healthy-aging-front\\Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-01-04T19:14:27.349Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "nginx.conf",
               "DocumentMoniker": "D:\\Git\\ProjectsSlava\\HealthyAgine\\healthy-aging-front\\nginx.conf",
               "RelativeDocumentMoniker": "healthy-aging-front\\nginx.conf",
               "ToolTip": "D:\\Git\\ProjectsSlava\\HealthyAgine\\healthy-aging-front\\nginx.conf",
               "RelativeToolTip": "healthy-aging-front\\nginx.conf",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-01-04T19:13:25.79Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\Git\\ProjectsSlava\\HealthyAgine\\healthy-aging-front\\Dockerfile",
+              "RelativeDocumentMoniker": "healthy-aging-front\\Dockerfile",
+              "ToolTip": "D:\\Git\\ProjectsSlava\\HealthyAgine\\healthy-aging-front\\Dockerfile",
+              "RelativeToolTip": "healthy-aging-front\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-04T19:14:27.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Git\\ProjectsSlava\\HealthyAgine\\HealthyAgineBackend\\Program.cs",
               "RelativeDocumentMoniker": "HealthyAgineBackend\\Program.cs",
               "ToolTip": "D:\\Git\\ProjectsSlava\\HealthyAgine\\HealthyAgineBackend\\Program.cs",
               "RelativeToolTip": "HealthyAgineBackend\\Program.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAADwvy4AAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAADwvyYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-04T18:02:40.23Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HealthyAgine.http",
+              "DocumentMoniker": "D:\\Git\\ProjectsSlava\\HealthyAgine\\HealthyAgineBackend\\HealthyAgine.http",
+              "RelativeDocumentMoniker": "HealthyAgineBackend\\HealthyAgine.http",
+              "ToolTip": "D:\\Git\\ProjectsSlava\\HealthyAgine\\HealthyAgineBackend\\HealthyAgine.http",
+              "RelativeToolTip": "HealthyAgineBackend\\HealthyAgine.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-01-04T19:18:54.836Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Git\\ProjectsSlava\\HealthyAgine\\HealthyAgineBackend\\appsettings.json",
+              "RelativeDocumentMoniker": "HealthyAgineBackend\\appsettings.json",
+              "ToolTip": "D:\\Git\\ProjectsSlava\\HealthyAgine\\HealthyAgineBackend\\appsettings.json",
+              "RelativeToolTip": "HealthyAgineBackend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-04T19:18:57.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "App.jsx",
               "DocumentMoniker": "D:\\Git\\ProjectsSlava\\HealthyAgine\\healthy-aging-front\\src\\App.jsx",
               "RelativeDocumentMoniker": "healthy-aging-front\\src\\App.jsx",
               "ToolTip": "D:\\Git\\ProjectsSlava\\HealthyAgine\\healthy-aging-front\\src\\App.jsx",
               "RelativeToolTip": "healthy-aging-front\\src\\App.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2026-01-04T19:13:03.13Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
+              "Title": "vite.config.js",
+              "DocumentMoniker": "D:\\Git\\ProjectsSlava\\HealthyAgine\\healthy-aging-front\\vite.config.js",
+              "RelativeDocumentMoniker": "healthy-aging-front\\vite.config.js",
+              "ToolTip": "D:\\Git\\ProjectsSlava\\HealthyAgine\\healthy-aging-front\\vite.config.js",
+              "RelativeToolTip": "healthy-aging-front\\vite.config.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-01-04T19:28:11.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "App.css",
               "DocumentMoniker": "D:\\Git\\ProjectsSlava\\HealthyAgine\\healthy-aging-front\\src\\App.css",
               "RelativeDocumentMoniker": "healthy-aging-front\\src\\App.css",
@@ -196,8 +226,7 @@
               "RelativeToolTip": "healthy-aging-front\\src\\App.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-01-04T19:13:01.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-04T19:13:01.6Z"
             }
           ]
         }

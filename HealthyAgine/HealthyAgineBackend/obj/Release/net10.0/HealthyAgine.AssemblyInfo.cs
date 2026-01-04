@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HealthyAgine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a6f90b4dc6daf61649a6e6678106f648600dede")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf79c673d74b5c72bcc4e339ab9b97e43d2a88bc")]
 [assembly: System.Reflection.AssemblyProductAttribute("HealthyAgine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HealthyAgine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

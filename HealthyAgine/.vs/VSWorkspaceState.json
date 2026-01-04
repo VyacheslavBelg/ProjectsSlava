@@ -1,9 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\healthy-aging-front",
     "\\healthy-aging-front\\src",
-    "\\HealthyAgineBackend"
+    "\\HealthyAgineBackend",
+    "\\HealthyAgineBackend\\Controllers"
   ],
-  "SelectedNode": "\\docker-compose.yml",
+  "SelectedNode": "\\healthy-aging-front\\nginx.conf",
   "PreviewInSolutionExplorer": false
 }
