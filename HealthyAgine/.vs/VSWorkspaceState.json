@@ -1,14 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Controllers",
-    "\\Data",
-    "\\Models",
-    "\\Properties",
-    "\\Repositories",
-    "\\Services",
-    "\\test"
+    "\\HealthyAgineBackend"
   ],
-  "SelectedNode": "\\Services\\UserService.cs",
+  "SelectedNode": "\\HealthyAgineBackend\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
