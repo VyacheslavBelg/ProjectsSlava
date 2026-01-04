@@ -29,35 +29,31 @@ namespace HealthyAgine.Services
                 Fat = input.Fat
             };
 
-            float LBM = user.Weight * (1f - user.Fat / 100f);
+ 
+            float lbm = user.Weight * (1f - user.Fat / 100f);
 
-            float Pers_BMR = 370f + 21.6f * LBM;
+     
+            float persBmr = 370f + 21.6f * lbm;
 
-            float MbAge = 0f;
+   
+            float refBmr = user.Sex
+                ? 10f * user.Weight + 6.25f * user.HeightCm - 5f * user.ChronoAge + 5f
+                : 10f * user.Weight + 6.25f * user.HeightCm - 5f * user.ChronoAge - 161f;
 
-            if (user.Sex)
-            {
-                MbAge = ((10f * user.Weight) + (6.25f * user.HeightCm) - Pers_BMR + 5f) / 5f;
-            }
-            else
-            {
-                MbAge = ((10f * user.Weight) + (6.25f * user.HeightCm) - Pers_BMR - 161f) / 5f;
-            }
+    
+            float metabolicScore = (persBmr - refBmr) / refBmr * 100f;
+
+   
+            float MbAge = user.ChronoAge - (metabolicScore / 5f) * 3f;
 
             float deltaAge = MbAge - user.ChronoAge;
 
-            string interpretation = "";
-
-            if (deltaAge <= -5f)
-                interpretation = "Отличное метаболическое здоровье";
-            else if (deltaAge < -1.5f)
-                interpretation = "Хорошее метаболическое здоровье";
-            else if (Math.Abs(deltaAge) <= 1.5f)
-                interpretation = "Среднее метаболическое здоровье";
-            else if (deltaAge < 5f)
-                interpretation = "Неоптимальное метаболическое здоровье";
-            else
-                interpretation = "Плохое метаболическое состояние";
+            string interpretation =
+                deltaAge <= -5f ? "Отличное метаболическое здоровье" :
+                deltaAge < -1.5f ? "Хорошее метаболическое здоровье" :
+                Math.Abs(deltaAge) <= 1.5f ? "Среднее метаболическое здоровье" :
+                deltaAge < 5f ? "Неоптимальное метаболическое здоровье" :
+                "Плохое метаболическое состояние";
 
             var save = new UserDBSave
             {
@@ -71,15 +67,14 @@ namespace HealthyAgine.Services
 
             await _userRepository.SaveUserAsync(save);
 
-            var output = new UserOutputDto
+            return new UserOutputDto
             {
                 MbAge = MbAge,
                 DeltaAge = deltaAge,
                 Interpretation = interpretation
             };
-
-            return output;
         }
+
 
         public async Task<UserOutputDto> CalculateWithFat(UserInputDto input, PersonParametrs parametrs)
         {
