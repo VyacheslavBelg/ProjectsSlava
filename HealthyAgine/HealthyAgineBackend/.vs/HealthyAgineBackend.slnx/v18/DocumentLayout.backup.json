@@ -30,7 +30,8 @@
               "RelativeToolTip": "Services\\UserService.cs",
               "ViewState": "AgIAABwAAAAAAAAAAADwvyEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-04T18:18:06.041Z"
+              "WhenOpened": "2026-01-04T18:18:06.041Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -42,7 +43,8 @@
               "RelativeToolTip": "Controllers\\UserController.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-04T18:17:41.332Z"
+              "WhenOpened": "2026-01-04T18:17:41.332Z",
+              "EditorCaption": ""
             }
           ]
         }

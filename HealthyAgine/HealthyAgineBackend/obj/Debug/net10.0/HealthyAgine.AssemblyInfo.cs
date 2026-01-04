@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HealthyAgine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9aa0cbee23119ab9c0952e7eefc54488ba6a5ce9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a6f90b4dc6daf61649a6e6678106f648600dede")]
 [assembly: System.Reflection.AssemblyProductAttribute("HealthyAgine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HealthyAgine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

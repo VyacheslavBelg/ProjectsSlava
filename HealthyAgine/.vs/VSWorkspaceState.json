@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
+    "\\healthy-aging-front\\src",
     "\\HealthyAgineBackend"
   ],
-  "SelectedNode": "\\HealthyAgineBackend\\Program.cs",
+  "SelectedNode": "\\docker-compose.yml",
   "PreviewInSolutionExplorer": false
 }

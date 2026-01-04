@@ -1,0 +1,36 @@
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=StrongPassword123! 
+    ports:
+      - "1433:1433"
+    volumes:
+      - sql_data:/var/opt/mssql
+
+  backend:
+    build: 
+      context: ./HealthyAgineBackend 
+      dockerfile: Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+    
+      - ConnectionStrings__DefaultConnection=Server=db;Database=HealthyAgineDB;User Id=sa;Password=StrongPassword123!;TrustServerCertificate=True;
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+
+
+  frontend:
+    build: 
+      context: ./healthy-aging-front 
+      dockerfile: Dockerfile
+    ports:
+      - "80:80" 
+    depends_on:
+      - backend
+
+volumes:
+  sql_data:
